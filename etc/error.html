@@ -1,0 +1,196 @@
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Studio Century</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#ffffff">
+  <link rel="manifest" href="../img/favicon/manifest.json">
+  <link rel="canonical" href="studiocentury.co.kr">
+  <link rel="alternate" href="studiocentury.co.kr">
+  <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Studio Century 스튜디오 센트리">
+  <meta name="google-site-verification" content="" />
+  <meta name="naver-site-verification" content="" />
+  <meta property="og:image" content="../img/og_image.png"> <!-- 도메인 붙인 후 카카오 og 작업 -->
+  <meta property="og:url" content="studiocentury.co.kr">
+  <meta property="og:title" content="Studio Century 스튜디오 센트리">
+  <meta property="og:description" content="Studio Century는 머그컵에 담겨진 따뜻했던 커피와 함께 오랫동안 지속가능한 공간을 우리는 만들어 갑니다.">
+  <meta property="og:site_name" content="Studio Century 스튜디오 센트리">
+  <meta property="og:type" content="website">
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <!-- // css -->
+  <!-- js -->
+  <script src="../js/jquery-3.1.0.min.js"></script>
+  <!-- <script src="./js/html5shiv.min.js"></script> -->
+  <!-- // js -->
+</head>
+
+
+<body>
+  <div class="wrap">
+    <div class="center">
+      <div class="tit_wrap">
+        <h2>404</h2>
+        <h3>not found</h3>
+      </div>
+      <p class="txt_wrap">
+        <span>
+          원하시는 페이지를 찾을 수 없습니다.<br> 찾으시려는 페이지의 주소가 잘못 입력되었거나,<br>
+          주소의 변경 혹은 삭제로 인해 인해 사용할 수 없습니다.<br>
+          입력하신 페이지의 주소가 정확한지 다시 한번 확인해 주세요.</span>
+      </p>
+      <div class="btn_wrap">
+        <button type="button" class="btn_main" onclick="location.href='../index.html';">홈 바로가기</button>
+        <button type="button" class="btn_prev" onClick="history.go(-1)">이전 페이지</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<style>
+  .body {
+    overflow: scroll;
+  }
+
+  .wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1800px;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .wrap .center {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .wrap .center .tit_wrap {
+    position: relative;
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  .wrap .center .tit_wrap h2 {
+    font-size: 95px;
+    line-height: 1;
+    font-weight: 500;
+    padding: .1em 0;
+    width: 500px;
+    margin: 0 auto;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 59%;
+    background: #000;
+    opacity: 0;
+    animation: BottomIn 0.7s linear 0.1s forwards;
+  }
+
+  .wrap .center .tit_wrap h3 {
+    font-size: 75px;
+    text-transform: capitalize;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    color: #fff;
+    opacity: 0;
+    animation: BottomIn 0.7s linear 0.5s forwards;
+  }
+
+  .wrap .center .txt_wrap {
+    position: relative;
+    display: block;
+    padding-top: 20px;
+    opacity: 0;
+    animation: BottomIn 0.7s linear 0.8s forwards;
+  }
+
+  .wrap .center .txt_wrap span {
+    line-height: 2;
+  }
+
+  .wrap .center .btn_wrap {
+    position: relative;
+    display: block;
+    padding-top: 5em;
+    animation: fadeIn 0.7s forwards;
+  }
+
+  .wrap .center .btn_wrap>button {
+    position: relative;
+    display: inline-block;
+    padding: 1em 5em;
+    border: 1px solid #000;
+    font-weight: 400;
+  }
+
+  .wrap .center .btn_wrap>button:hover {
+
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .wrap .center .btn_wrap>button:first-child {
+    margin-right: 8px;
+  }
+
+
+  @media screen and (max-width : 1024px) {
+    .wrap .center .btn_wrap>button {
+      padding: 1em 3em;
+    }
+  }
+
+  @media screen and (max-width : 768px) {
+    .wrap .center .tit_wrap h2 {
+      width: 300px;
+      font-size: 75px;
+    }
+
+    .wrap .center .tit_wrap h3 {
+      font-size: 55px;
+    }
+  }
+
+  @media screen and (max-width : 480px) {
+    .wrap .center .tit_wrap h2 {
+      width: 300px;
+      font-size: 55px;
+    }
+
+    .wrap .center .tit_wrap h3 {
+      font-size: 45px;
+    }
+
+    .wrap .center .txt_wrap {
+      padding-top: 0px;
+    }
+  }
+</style>
